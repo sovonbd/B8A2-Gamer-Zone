@@ -141,7 +141,7 @@
     padding-right: 140px;
 }
 
-/* banner 2 section stles */
+/* banner 2 section styles */
 .banner2 {
     display: flex;
     justify-content: space-between;
@@ -183,18 +183,74 @@
     font-weight: 700;
 }
 
+/* online videos section styles */
+
+.videos {
+    margin: 50px auto;
+}
+
+.videos-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.videos-desc {
+    color: #534C64;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 15px 0px 20px;
+}
+
+.videos-img {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+
+}
+
+.videos-img-collection {
+    max-width: 285px;
+}
+
+.videos-img-collection img {
+    max-width: 100%;
+}
+
+.fig-caption {
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.videos-img-collection>img:hover {
+    border: 5px solid #FF42A5;
+    border-radius: 25px;
+    opacity: 0.5;
+}
+
+
 /* Responsive design for small devices */
 
 @media screen and (max-width: 576px) {
 
     .navbar,
     .menu,
-    .banner2 {
+    .banner2,
+    .videos-img {
         flex-direction: column;
     }
 
+    .banner2-title,
+    .videos-title {
+        font-size: 1.8rem;
+    }
+
     .banner-desc,
-    .banner2-desc {
+    .banner2-desc,
+    .videos-desc {
         font-size: 0.8rem;
     }
 
@@ -255,13 +311,20 @@
         padding: 0px 30px;
     }
 
-    .banner2-title {
-        font-size: 2rem;
-    }
-
     .banner2-info .our-purpose,
     .banner2-info .unleash {
         font-size: 1rem;
+    }
+
+    /* online videos section styles */
+    .videos-img {
+        align-items: center;
+    }
+
+    .fig-caption {
+        font-size: 0.6rem;
+        text-align: center;
+        margin: 5px 0px;
     }
 
 }
@@ -284,8 +347,14 @@
         gap: 10px;
     }
 
+    .banner2-title,
+    .videos-title {
+        font-size: 2rem;
+    }
+
     .banner-desc,
-    .banner2-desc {
+    .banner2-desc,
+    .videos-desc {
         font-size: 0.8rem;
     }
 
@@ -318,19 +387,22 @@
 
     /* banner 2 section styles */
 
-    .banner2{
+    .banner2 {
         margin: 30px 0px 50px;
     }
+
     .banner2 img {
         max-width: 55%;
-    }
-
-    .banner2-title {
-        font-size: 2rem;
     }
 
     .banner2-info .our-purpose,
     .banner2-info .unleash {
         font-size: 1rem;
+    }
+
+    /* online videos section styles */
+
+    .fig-caption {
+        font-size: 0.6rem;
     }
 }
