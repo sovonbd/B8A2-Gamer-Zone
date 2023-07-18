@@ -1,0 +1,116 @@
+/* Google fonts added */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* shared section styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.title-G {
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* nav section styles */
+.header {
+    max-width: 1240px;
+    margin: 0px auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    min-height: 130px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-logo img {
+    max-width: 60px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #3C354F;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.follow-us {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 15px 20px;
+}
+
+.follow-us .youtube {
+    color: #F61C0D;
+}
+
+
+
+/* Responsive design for small devices */
+
+@media screen and (max-width: 576px) {
+
+    .navbar,
+    .menu {
+        flex-direction: column;
+    }
+
+    /* nav section styles */
+
+    .navbar {
+        gap: 30px;
+        margin: 80px 0px;
+    }
+
+    .nav-logo {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    .header {
+        padding: 0px 30px;
+    }
+
+    .nav-logo,
+    .menu,
+    .follow-us {
+        gap: 10px;
+    }
+
+    /* nav section styles */
+
+    .menu a {
+        gap: 10px;
+        font-size: 14px;
+    }
+}
