@@ -336,6 +336,66 @@
     font-weight: 600;
 }
 
+/* footer section styles */
+
+footer {
+    text-align: center;
+    background: #0B0223;
+    height: max-content;
+    padding: 40px 0px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.footer>.navbar {
+    color: #FFF;
+    justify-content: center;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-menu a {
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.social-icons {
+    color: #FFF;
+    font-size: 1.8rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 30%;
+    margin: 25px auto;
+}
+
+.condition {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.condition a,
+.footer-desc {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer-desc {
+    margin: 25px 0px 40px;
+}
+
 
 /* Responsive design for small devices */
 
@@ -358,7 +418,8 @@
     .banner-desc,
     .banner2-desc,
     .videos-desc,
-    .play-desc {
+    .play-desc,
+    .footer-menu a {
         font-size: 0.8rem;
     }
 
@@ -402,7 +463,6 @@
     .goat {
         font-size: 3rem;
     }
-
 
     .banner img {
         width: 100%;
@@ -470,7 +530,46 @@
 
     .games-name {
         font-size: 0.5rem;
+    }
 
+    /* footer section styles */
+
+    .footer {
+        max-width: 70%;
+        margin: 0px auto;
+    }
+
+    .navbar {
+        margin-top: 0px;
+    }
+
+    .footer-menu {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0px 30px;
+    }
+
+    .social-icons {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        max-width: fit-content;
+    }
+
+    .condition {
+        flex-wrap: wrap;
+        max-width: 60%;
+        margin: 0 auto;
+        gap: 10px;
+    }
+
+    .condition a,
+    .footer-desc {
+        font-size: 0.5rem;
+    }
+
+    .footer-desc {
+        max-width: 30%;
+        margin: 25px auto;
     }
 
 }
@@ -502,7 +601,8 @@
     .banner-desc,
     .banner2-desc,
     .videos-desc,
-    .play-desc {
+    .play-desc,
+    .footer-menu a {
         font-size: 0.8rem;
     }
 
@@ -588,5 +688,17 @@
     .games-name {
         font-size: 0.8rem;
 
+    }
+
+    /* footer section styles */
+
+    .social-icons {
+        max-width: 50%;
+        margin: 25px auto;
+    }
+
+    .condition a,
+    .footer-desc {
+        font-size: 0.6rem;
     }
 }
