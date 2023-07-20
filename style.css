@@ -425,6 +425,9 @@ footer a {
     margin: 25px 0px 40px;
 }
 
+.hide {
+    display: none;
+}
 
 /* Responsive design for small devices */
 
@@ -574,10 +577,11 @@ footer a {
     }
 
     .games-list {
-        padding: 5px 5px;
+        padding: 5px 0px;
         gap: 5px;
-        max-width: 35%;
+        max-width: 34%;
         font-size: 0.5rem;
+        justify-content: center;
     }
 
     .games img {
